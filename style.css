@@ -203,8 +203,72 @@ header nav .menu-right a:hover{
 .project{
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #fafafa;
+    background-color: #f7f5f5;
 }
+.project .filter-items{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.project .filter-items > div{
+    padding-right: 5px;
+    margin-right: 10px;
+    border-bottom: 3px solid transparent;
+}
+.project .filter-items .all{
+    cursor: pointer;
+    color:#e24327;
+    border-bottom: 3px solid #e24327;
+}
+.project .filter-items > div:hover{
+    cursor: pointer;
+    color:#e24327;
+    border-bottom: 3px solid #e24327; 
+} 
+.project .project-items{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 420px));
+    grid-gap: 10px 20px;
+}
+.project .project-items .project-item{
+    max-width: 100%;
+    height: auto;
+    margin: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: -2px 0px 24px 1px rgba(186,186,186,0.4); 
+    box-shadow: -2px 0px 24px 1px rgba(186,186,186,0.4);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.project .project-items .project-item:hover{
+    transform: scale(1.04);
+}
+.project .project-items .image{
+    /* width: auto; */
+    /* height: 400px; */
+    overflow: hidden;
+}
+.project .project-items .image img{
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    object-position: center;
+    object-fit: cover;
+}
+.project .project-items  .description{
+    padding: 16px;
+}
+.project .project-items  .description p{
+    color: #797979;
+    margin-top: 10px;
+}
+.project .project-items  .description small{
+    font-size: 12px;
+    color: #797979;
+}
+
 
 /* Contacto */
 .contact{
@@ -325,5 +389,14 @@ footer .content .copyright{
     }
     .about-me .about-me-items .skills{
         width: 100%;
+    }
+
+    /* proyectos */
+    .project .project-items .image img{
+        overflow: hidden;
+        width: 100%;
+        height: 150px;
+        object-position: center;
+        object-fit: cover;
     }
   }
