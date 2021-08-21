@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cover-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images//david-schultz-SrewPUfo2c0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -2;
+}
+.cover-page .opacity-layer{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(13, 17, 54, 0.5);
+    z-index: -1;
+}
+.items-cover-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.items-cover-page .data-user{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.items-cover-page .content{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.items-cover-page .photo{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: 3px solid #c6c6c7;
+    overflow: hidden;
+}
+.items-cover-page .photo img{
+    width: 100%;
+    height: auto;
+    object-position: 0px -50px;
+}
+.items-cover-page .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.items-cover-page .text h3{
+    text-align: center;
+    font-size: 30px;
+    color:#eceaea;
+    margin-top: 10px;
+}
+.items-cover-page .text h5{
+    text-align: center;
+    color: #9a9a9c;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 6px;
+}
+.items-cover-page .icon-next{
+    font-size: 38px;
+    color:#eceaea;
+    text-align: center;
+}
+
+
+
+.about-me{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+/* ---------------------------------------------
+                MEDIA QUERY
+   ------------------------------------------- */
+   @media only screen and (max-width: 600px) {
+    .cover-page .items-cover-page .photo{
+        width: 120px;
+        height: 120px; 
+    }
+    .cover-page .items-cover-page .photo img{
+        object-position: 0px -35px;
+    }
+    .cover-page .items-cover-page .text h3{
+        margin-top: 8px;
+        font-size: 26px;
+    }
+    .cover-page .items-cover-page .text h5{
+        font-size: 16px; 
+    }
+  }
